@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        ._nav {
+            width: 100%;
+            height: 50px;
+            background-color: black;
+        }
+
+        .nav {
+            display: flex;
+            width: 1200px;
+            height: 50px;
+            background-color: black;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav>div:nth-child(1) {
+            height: 50px;
+            width: 107px;
+            background: url("images/3.jpg");
+            display: flex;
+            align-items: center;
+        }
+
+        .nav>div:nth-child(2) {
+            color: white;
+            display: flex;
+            width: 350px;
+            height: 50px;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav>div:nth-child(2) a {
+            color: white;
+            font-size: 17px;
+        }
+
+        .nav>div:nth-child(2)>a:nth-child(1) {
+            color: orange;
+        }
+
+        .nav>div:nth-child(3) {
+            color: white;
+            display: flex;
+            width: 300px;
+            height: 50px;
+            justify-content: space-between;
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav>div:nth-child(3) a {
+            color: rgb(221, 217, 217);
+            font-size: 12px;
+        }
+
+        .nav>div:nth-child(3)>div:nth-child(1) {
+            display: inline-block;
+            display: flex;
+        }
+
+        .nav>div:nth-child(3)>div:nth-child(2) {
+            display: inline-block;
+            display: flex;
+        }
+
+        .nav>div:nth-child(3)>div:nth-child(3) {
+            display: inline-block;
+            display: flex;
+        }
+
+        .nav>div:nth-child(3)>div:nth-child(4) {
+            display: inline-block;
+            display: flex;
+        }
+
+        .one {
+            background: url(images/2.png);
+            width: 20px;
+            height: 20px;
+            background-position: 100px 210px;
+        }
+
+        .two {
+            background: url(images/2.png);
+            width: 20px;
+            height: 20px;
+            background-position: 100px 210px;
+        }
+
+        .three {
+
+            background: url(images/2.png);
+            width: 20px;
+            height: 20px;
+            background-position: 100px 210px;
+        }
+
+        .four {
+            background: url(images/2.png);
+            width: 20px;
+            height: 20px;
+            background-position: 100px 210px;
+        }
+
+        .nav>div:nth-child(4) {
+            color: white;
+            display: flex;
+            width: 120px;
+            height: 50px;
+            justify-content: space-between;
+            font-size: 13px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .nav>div:nth-child(4) a {
+            font-size: 12px;
+            color: white;
+        }
+
+        .nav>div:nth-child(5) {
+            background: url(images/4.png);
+            width: 180px;
+            height: 25px;
+        }
+
+        .nav>div:nth-child(5) span {
+            font-size: 12px;
+            color: grey;
+            height: 25px;
+            line-height: 25px;
+            padding-left: 5px;
+        }
+
+        ._middle {
+            width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            height: 750px;
+        }
+
+        .middle {
+            width: 700px;
+            height: 750px;
+            position: absolute;
+            padding-left: 1px;
+        }
+
+
+        .lyric {
+            margin-top: 30px;
+            margin-left: 20px;
+            width: 700px;
+            height: 170px;
+            border-bottom: rgb(208, 231, 231) 1px solid;
+            position: absolute;
+        }
+
+        .lyric>p:nth-child(1) {
+            font-size: 30px;
+            padding-left: 300px;
+        }
+
+        .lyric>p:nth-child(2) {
+            padding-left: 150px;
+        }
+
+        .lyric>p:nth-child(3) {
+            padding-left: 160px;
+        }
+
+        .tittle {
+            font-size: 16px;
+            color: rgb(70, 69, 69)
+        }
+
+        .tittle1 {
+            font-size: 16px;
+            color: rgb(240, 156, 61)
+        }
+
+        .time {
+            color: black;
+            font-size: 14px;
+        }
+
+        .blew {
+            height: 530px;
+            overflow: hidden;
+            padding-left: 150px;
+            overflow-y: scroll;
+            -webkit-scrollbar-corner: 20;
+        }
+
+        .blew p {
+            font-size: 16px;
+            padding-bottom: 6px;
+        }
+
+        .blew p:nth-child(1) {
+            padding-left: 100px;
+        }
+
+        .blew p:nth-child(2) {
+            padding-left: 104px;
+        }
+
+        .blew p:nth-child(3),
+        .blew p:nth-child(4) {
+            padding-left: 96px;
+        }
+
+        .blew p:nth-child(5) {
+            padding-left: 108px;
+        }
+
+        .orange {
+            padding-left: 50px;
+            color: chocolate;
+        }
+
+        .blew p:nth-child(7) {
+            padding-left: 54px;
+        }
+
+        .blew p:nth-child(8) {
+            padding-left: 50px;
+        }
+
+        .blew p:nth-child(9),
+        .blew p:nth-child(10) {
+            padding-left: 52px;
+        }
+
+        .blew p:nth-child(11) {
+            padding-left: 56px;
+        }
+
+        .blew p:nth-child(12) {
+            padding-left: 104px;
+        }
+
+        .blew p:nth-child(13) {
+            padding-left: 104px;
+        }
+
+        .blew p:nth-child(14) {
+            padding-left: 56px;
+        }
+
+        .blew p:nth-child(15) {
+            padding-left: 56px;
+        }
+
+        .circle1 {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: rgb(217, 220, 228) 1px solid;
+            position: absolute;
+            display: inline-block;
+            z-index: 1000;
+            margin-top: 160px;
+            margin-left: 160px;
+        }
+
+        .circle2 {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: rgb(214, 218, 226) 1px solid;
+            position: absolute;
+            display: inline-block;
+            z-index: 1000;
+            margin-top: 150px;
+            margin-left: 150px;
+        }
+
+        ._pic {
+            padding-left: 800px;
+            padding-top: 50px;
+            width: 330px;
+            height: 330px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .pic1 {
+            width: 350px;
+            height: 350px;
+            border: rgb(203, 229, 230) 1px solid;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+        }
+
+        .pic {
+            width: 330px;
+            height: 330px;
+            border-radius: 50%;
+            margin-left: 10px;
+            margin-top: 10px;
+            display: inline-block;
+            position: absolute;
+            z-index: 200;
+        }
+
+        @keyframes animation1 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .box:hover {
+            animation: animation1 3s linear 1s;
+        }
+
+        .pic {
+            animation: animation1 5s linear infinite;
+        }
+
+        .player {
+            width: 500px;
+            height: 100px;
+            margin-left: 730px;
+            margin-top: 50px;
+        }
+
+        #wp_playBtn {
+            background-image: url(images/2.jpg);
+            width: 40px;
+            height: 40px;
+            background-position: -110px 0px;
+            margin-left: 30px;
+            float: left;
+        }
+
+
+        #prograssBar {
+            float: left;
+            position: relative;
+            width: 250px;
+            margin-top: 20px;
+            height: 4px;
+            background-color: rgb(204, 204, 204);
+            display: inline;
+            margin-left: 5px;
+        }
+
+        .prograssBar {
+            height: 4px;
+            display: flex;
+            background-color: rgb(240, 194, 45);
+        }
+
+        #wp_bufBar {
+            width: 0px;
+            height: 4px;
+        }
+
+        #wp_processBtn {
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: -3px;
+            background: url(images/2.jpg);
+            background-position: -23px 0px;
+        }
+
+        #time {
+            width: 35px;
+            height: 25px;
+            font-size: 12px;
+            color: rgb(206, 202, 195);
+            line-height: 25px;
+            text-align: center;
+            padding-left: 5px;
+            float: left;
+            margin-top: 10px;
+        }
+
+        #mute {
+            width: 20px;
+            height: 16px;
+            width: 27px;
+            background-image: url(images/2.jpg);
+            background-position: -42px 0px;
+            float: left;
+            margin-top: 10px;
+        }
+
+        .load {
+            width: 200px;
+            height: 48px;
+            background: url(images/2.jpg);
+            background-position: 0px -40px;
+            margin-left: 850px;
+            display: flex;
+            position: relative;
+        }
+
+        .load1 {
+            width: 19px;
+            height: 18px;
+            background: url(images/2.jpg);
+            background-position: 0px 0px;
+            position: absolute;
+            margin-left: 25px;
+            margin-top: 18px;
+        }
+
+        .load span {
+            height: 48px;
+            line-height: 48px;
+            padding-top: 3px;
+            padding-left: 50px;
+        }
+
+        .touxiang {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: inline-block;
+            padding-bottom: 2px;
+        }
+
+        ._touxiang {
+            padding-left: 800px;
+            width: 60px;
+            height: 55px;
+            float: left;
+            padding-top: 50px;
+        }
+
+        .guo {
+            background: url(images/6.jpg);
+            background-repeat: no-repeat;
+            width: 250px;
+            height: 90px;
+            display: inline-block;
+            position: relative;
+            margin-left: 10px;
+            margin-top: 50px;
+            font-size: 14px;
+            color: rgb(121, 137, 138);
+        }
+
+        .guo1 {
+            position: absolute;
+            padding-left: 25px;
+        }
+
+        .guo img {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            padding-top: 24px;
+            padding-left: 20px;
+        }
+
+        .guo2 {
+            font-size: 13px;
+            position: absolute;
+            padding-top: 26px;
+            padding-left: 44px;
+        }
+
+        .guo3 {
+            font-size: 12px;
+            position: absolute;
+            padding-top: 26px;
+            padding-left: 190px;
+            color: blueviolet
+        }
+
+        .commetArea {
+            width: 650px;
+            height: 550px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        .area1 {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid rgb(241, 241, 241);
+        }
+
+        .picture {
+            width: 50px;
+            height: 50px;
+            margin-top: 10px;
+        }
+
+        .text {
+            width: 580px;
+            height: 100px;
+            float: right;
+            margin-top: 10px;
+            border: rgba(145, 184, 194, 0.295) 1px solid;
+            font-size: 14px;
+            color: darkgrey;
+            padding-top: 8px;
+            padding-left: 14px;
+        }
+
+        .smile {
+            padding-left: 70px;
+            padding-top: 15px;
+        }
+
+        #_zero {
+            padding-left: 360px;
+            color: rgb(139, 135, 135);
+            font-size: 14px;
+
+        }
+
+        .discuss {
+            background-color: rgb(248, 182, 38);
+            color: white;
+            width: 80px;
+            height: 35px;
+        }
+
+        .area2 p {
+            font-size: 16px;
+        }
+
+        .area3 {
+            display: block;
+            border-top: rgb(241, 241, 241) solid 2px;
+        }
+
+
+        .area4 {
+            flex-grow: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #p1 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: -10px;
+            color: rgb(121, 124, 124);
+        }
+
+        #p2 {
+            margin-top: -15px;
+            font-size: 12px;
+            color: rgb(168, 157, 168);
+        }
+
+        .bottom1 {
+            margin-left: 25px;
+        }
+
+        .bottomButton1 {
+            width: 23px;
+            height: 23px;
+            border-radius: 50%;
+            background-color: rgb(253, 186, 0);
+            text-align: center;
+            color: white;
+            margin-left: 25px;
+        }
+
+        .bottomButton2 {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: rgb(237, 237, 237);
+            text-align: center;
+            color: black;
+            margin-left: 25px;
+        }
+
+        #space {
+            width: 1px;
+            height: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="_nav">
+        <div class="nav">
+            <div></div>
+            <div>
+                <a href="#">首页</a>
+                <a href="#">榜单</a>
+                <a href="#">歌手</a>
+                <a href="#">下载酷我客户端</a>
+            </div>
+            <div>
+                <div>
+                    <div class="one"></div><a href="#">美女秀</a>
+                </div>
+                <div>
+                    <div class="two"></div><a href="#">酷我耳机</a>
+                </div>
+                <div>
+                    <div class="three"></div><a href="#">VIP会员</a>
+                </div>
+                <div>
+                    <div class="four"></div><a href="#">i听</a>
+                </div>
+            </div>
+            <div>
+                <a href="#">更多服务</a>
+                <a href="#">登录</a>
+                <a href="#">^</a>
+            </div>
+            <div><span>找到好音乐</span></div>
+        </div>
+    </div>
+    <div class="_middle">
+        <div class="middle">
+            <div class="lyric">
+                <p>喜羊羊</p>
+                <p><span class="tittle">专辑：</span><span class="tittle1">儿歌大全</span>&nbsp;&nbsp;
+                    <span class="tittle">歌手：</span><span class="tittle1">华语群星</span>&nbsp;&nbsp;
+                    <span class="tittle4">分享</span>&nbsp;&nbsp;
+                    <img src="images/4.jpg" />&nbsp;&nbsp;
+                    <span class="tittle1">评论</span>
+                </p>
+                <p>
+                    <span class="time">上传时间：2015-10-02&nbsp;歌曲来源：民大相思湖网球社</span>
+                </p>
+                <div class="blew">
+                    <p class="normal">白云因我变得柔软</p>
+                    <p>别看我只是一只羊</p>
+                    <p>羊儿的聪明难以想象</p>
+                    <p>天再高心情一样奔放</p>
+                    <p>每天都追赶太阳</p>
+                    <p class="orange">有什么难题 去牵绊我 都不会去心伤</p>
+                    <p>有什么危险 在我面前 也不会去慌乱</p>
+                    <p>就算有狼群 把我追捕 也当做游戏一场</p>
+                    <p>在什么时间 都爱开心 笑容都会飞翔</p>
+                    <p>就算会摔倒 站了起来 永远不会沮丧</p>
+                    <p>在所有天气 拥有叫人 大笑的力量</p>
+                    <p>虽然我只是羊</p>
+                    <p>虽然我只是羊</p>
+                    <p>喜羊羊 美羊羊 懒羊羊 沸羊羊</p>
+                    <p>慢羊羊 软绵绵 红太狼 灰太狼</p>
+                </div>
+            </div>
+        </div>
+        <div class="_pic">
+            <div class="pic1"></div>
+            <img class="pic" src="images/1.jpg" />
+            <div class="circle2"></div>
+            <div class="circle1"></div>
+
+        </div>
+
+        <div class="player">
+            <audio autoplay="autoplay" id="mymusic">
+                <source src="images/2.mp3" type="audio/mp3">
+            </audio>
+            <div class="play" id="wp_playBtn"></div>
+
+            <div id="prograssBar">
+                <div id="wp_bufBar">
+                    <div class="prograssBar" id="wp_processBar"></div>
+                    <a href="##" class="schedule_btn" id="wp_processBtn" style="left: 0;"></a>
+                </div>
+            </div>
+            <div id="time">00:00</div>
+            <div id="mute"></div>
+        </div>
+        <div class="load">
+            <div class="load1"></div><span>免费下载这首歌</span>
+        </div>
+        <div class="bubble">
+            <div class="_touxiang"><img class="touxiang" src="images/touxiang.jpg" /></div>
+            <div class="guo">
+                <span class="guo1">郭子仪——H5班</span>
+                <img src="images/10.gif" />
+                <span class="guo2">喜羊羊与灰太狼</span>
+                <span class="guo3">去现场></span>
+            </div>
+        </div>
+    </div>
+    <div class="commetArea">
+        <div class="area1">
+            <p id="p1">评论&nbsp&nbsp&nbsp</p>
+            <p id="p2">1703条评论</p>
+        </div>
+        <div class="area2">
+            <img class="picture" id="picture" src="images/touxiang.jpg" />
+            <textarea id="text" class="text" cols="60" rows="10">分享你的音乐见解</textarea>
+            <div class="end"><img class="smile" src="images/smile.png" />
+                <span id="_zero">已输入<span id="zero">0</span>个字</span>
+                <button class="discuss" id="discuss" onclick="saveStorage('text');">评论</button>
+            </div>
+            <p>精彩评论</p>
+        </div>
+        <div class="area3" id="area3">
+            <div id="space"></div>
+        </div>
+        <div class="area4">
+            <div id="btm1" class="bottomButton2" onclick="changeStatus(this)">&lt</div>
+            <div id="btm2" class="bottomButton1" onclick="changeStatus(this)">1</div>
+            <div id="btm3" class="bottomButton2" onclick="changeStatus(this)">2</div>
+            <div id="btm4" class="bottomButton2" onclick="changeStatus(this)">3</div>
+            <p class="bottom1">...</p>
+            <div id="btm5" class="bottomButton2" onclick="changeStatus(this)">17</div>
+            <div id="btm6" class="bottomButton2" onclick="changeStatus(this)">&gt</div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var playBtn = document.getElementById("wp_playBtn");
+    var volBar = document.getElementById("mute");
+    var prograssBar = document.getElementById("wp_processBar");
+    var processBtn = document.getElementById("wp_processBtn");
+    var playTime = document.getElementById("time");
+    var mymusic = document.getElementById("mymusic");
+    var bufBar = document.getElementById("wp_bufBar");
+    var discuss = document.getElementById("discuss");
+    var text = document.getElementById("text");
+    var area3 = document.getElementById("area3");
+    var picture = document.getElementById("picture");
+    var space = document.getElementById("space");
+    var zero = document.getElementById("zero");
+    var flag = true;
+    playBtn.onclick = function () {
+        if (flag == true) {
+            //开始播放
+            mymusic.play();
+            playBtn.style.backgroundPosition = "-207px 0px";
+            //播放时间
+            self.setInterval(function () {
+                var m = Math.floor(mymusic.currentTime / 60);
+                var s = Math.floor(mymusic.currentTime % 60) + 1;
+                if (s == 60) {
+                    s = 0;
+                    m = Math.floor(mymusic.currentTime / 60) + 1;
+                }
+                if (m <= 9) {
+                    m = "0" + m;
+                }
+                if (s <= 9) {
+                    s = "0" + s;
+                }
+                playTime.innerHTML = m + ":" + s;
+            }, 1000)
+            //进度条
+            mymusic.ontimeupdate = function () {
+                var pre = Math.round(mymusic.currentTime / mymusic.duration * 240);
+                prograssBar.style.width = pre + "px";
+                processBtn.style.marginLeft = pre + "px";
+                if (mymusic.currentTime == mymusic.duration) {
+                    //播放结束
+                    mymusic.pause();
+                    flag = true;
+                    playBtn.style.backgroundPosition = "-110px 0px";
+                }
+            }
+            flag = false;
+        } else {
+            //暂停播放
+            playBtn.style.backgroundPosition = "-110px 0px";
+            mymusic.pause();
+            flag = true;
+        }
+    }
+    //静音
+    volBar.onclick = function () {
+        if (mymusic.muted == false) {
+            mymusic.muted = true;
+            volBar.style.backgroundPosition = "-42px 0px";
+        } else {
+            mymusic.muted = false;
+            volBar.style.backgroundPosition = "-42px 0px";
+        }
+    }
+    //获取当前时间
+    function nowtime() {
+        var mynow = new Date();//默认的获取的是当前时间
+        var year = ((mynow.getFullYear()));//获取年
+        var month = ("0" + (mynow.getMonth())).slice(-2);//获取月
+        var day = ("0" + (mynow.getDate())).slice(-2);//获取日
+        var hour = ("0" + (mynow.getHours())).slice(-2);;//获取小时
+        var minute = ("0" + (mynow.getMinutes())).slice(-2);//获取分钟
+        var second = ("0" + (mynow.getSeconds())).slice(-2);
+        return strdate;
+
+    }
+
+    //向本地存储存储数据
+    discuss.onclick = function () {
+        var noteList = localStorage["noteList"];
+        if (noteList == "" || noteList == null || noteList == undefined) {
+            localStorage["noteList"] = "[]";
+        }
+        noteList = JSON.parse(localStorage["noteList"]);
+        var noteObj = {
+            "picture": picture.src,
+            "text": text.value,
+            "time": nowtime()
+        }
+        noteList.push(noteObj);
+        localStorage["noteList"] = JSON.stringify(noteList);
+        area3.innerHTML = "";
+        getNotes();
+    }
+
+    //将存储的数据显示到页面上
+    function getNotes() {
+        var noteList = localStorage["noteList"];
+        if (noteList == "" || noteList == null || noteList == undefined) {
+            localStorage["noteList"] = "[]";
+        }
+        noteList = JSON.parse(noteList);
+        for (var i = noteList.length; i > 0; i--) {
+            var divNode = document.createElement("div");
+            divNode.style.height = "80px";
+            divNode.style.width = "650px";
+            divNode.style.marginTop = "20px";
+            divNode.style.display = "block";
+            divNode.style.borderBottom = "1px solid rgba(145, 184, 194, 0.295)"
+            area3.appendChild(divNode);
+
+            var divNode1 = document.createElement("div");
+            divNode1.style.height = "55px";
+            divNode1.style.width = "55px";
+            divNode1.style.float = "left";
+            divNode.appendChild(divNode1);
+
+            var imgNode = document.createElement("img");
+            divNode1.appendChild(imgNode);
+            imgNode.style.width = "55px";
+            imgNode.style.height = "55px";
+            imgNode.style.float = "left";
+            imgNode.src = noteList[i - 1]["picture"];
+
+            var divNode2 = document.createElement("div");
+            divNode2.style.height = "25px";
+            divNode2.style.width = "700px";
+            divNode2.style.display = "inlin-block";
+            divNode.appendChild(divNode2);
+
+            var pNode2 = document.createElement("span");
+            pNode2.innerHTML = "裴萌萌";
+            pNode2.style.paddingLeft = "10px";
+            pNode2.style.color = "orange";
+            pNode2.style.fontSize = "14px";
+            divNode2.appendChild(pNode2);
+
+            var pNode3 = document.createElement("span");
+            pNode3.innerHTML = "分享";
+            pNode3.style.paddingLeft = "500px";
+            pNode3.style.fontSize = "14px";
+            pNode3.style.color = "rgb(139, 135, 135)";
+            divNode2.appendChild(pNode3);
+
+
+            var pNode = document.createElement("span");
+            divNode.appendChild(pNode);
+            pNode.style.paddingLeft = "10px";
+            pNode.style.fontSize = "14px";
+            pNode.display = "block";
+            pNode.style.color = "rgb(139, 135, 135)";
+            pNode.innerHTML = noteList[i - 1]["text"];
+
+
+            var divNode3 = document.createElement("div");
+            divNode3.className = "box12";
+            divNode3.style.height = "30px";
+            divNode3.style.width = "700px";
+            divNode3.style.marginTop = "6px";
+            divNode.appendChild(divNode3);
+
+            var pNode1 = document.createElement("span");
+            pNode1.className = "riqi";
+            divNode3.appendChild(pNode1);
+            pNode1.style.fontSize = "13px";
+            pNode1.style.color = "rgb(139, 135, 135)";
+            pNode1.style.paddingLeft = "10px";
+            pNode1.style.paddingTop = "5px";
+            pNode1.innerHTML = noteList[i - 1]["time"];
+
+            var pNode4 = document.createElement("span");
+            pNode4.className = "p11";
+            pNode4.innerHTML = "163";
+            pNode4.style.paddingLeft = "370px";
+            pNode4.style.color = "rgb(139, 135, 135)";
+            pNode4.style.fontSize = "13px";
+            divNode3.appendChild(pNode4);
+
+            var imgNode1 = document.createElement("img");
+            imgNode1.className = "img122";
+            divNode3.appendChild(imgNode1);
+            imgNode1.style.width = "20px";
+            imgNode1.style.height = "20px";
+            imgNode1.style.paddingLeft = "5px";
+            imgNode1.src = "images/dianzan.png";
+
+            var pNode5 = document.createElement("span");
+            pNode5.className = "p22";
+            pNode5.innerHTML = "回复";
+            pNode5.style.paddingLeft = "5px";
+            pNode5.style.fontSize = "13px";
+            pNode5.style.color = "rgb(139, 135, 135)";
+            divNode3.appendChild(pNode5);
+        }
+    }
+    //页面加载时调getNotes()
+    window.onload = function () {
+        getNotes();
+    }
+
+    text.onclick = function () {
+        text.value = "";
+        zero.innerHTML = 0;
+    }
+
+    var btm1 = document.getElementById("btm1");
+    var btm2 = document.getElementById("btm2");
+    var btm3 = document.getElementById("btm3");
+    var btm4 = document.getElementById("btm4");
+    var btm5 = document.getElementById("btm5");
+    var btm6 = document.getElementById("btm6");
+    function changeStatus(obj) {
+        btm1.className = "bottomButton2";
+        btm2.className = "bottomButton2";
+        btm3.className = "bottomButton2";
+        btm4.className = "bottomButton2";
+        btm5.className = "bottomButton2";
+        btm6.className = "bottomButton2";
+        obj.className = "bottomButton1";
+    }
+
+
+    text.addEventListener('input', function () {
+        var a = text.value.length;
+        zero.innerHTML = a;
+    });
+
+</script>
+
+</html>
