@@ -344,9 +344,9 @@
 
         .player {
             width: 500px;
-            height: 100px;
-            margin-left: 730px;
-            margin-top: 50px;
+            height: 70px;
+            margin-left: 770px;
+            margin-top: 60px;
         }
 
         #wp_playBtn {
@@ -417,7 +417,7 @@
             height: 48px;
             background: url(images/2.jpg);
             background-position: 0px -40px;
-            margin-left: 850px;
+            margin-left: 870px;
             display: flex;
             position: relative;
         }
@@ -702,7 +702,7 @@
         <div class="bubble">
             <div class="_touxiang"><img class="touxiang" src="images/touxiang.jpg" /></div>
             <div class="guo">
-                <span class="guo1">郭子仪——H5班</span>
+                <span class="guo1">裴萌萌——H5班</span>
                 <img src="images/10.gif" />
                 <span class="guo2">喜羊羊与灰太狼</span>
                 <span class="guo3">去现场></span>
@@ -812,7 +812,8 @@
         var day = ("0" + (mynow.getDate())).slice(-2);//获取日
         var hour = ("0" + (mynow.getHours())).slice(-2);;//获取小时
         var minute = ("0" + (mynow.getMinutes())).slice(-2);//获取分钟
-        var second = ("0" + (mynow.getSeconds())).slice(-2);
+        var second = ("0" + (mynow.getSeconds())).slice(-2);//获取秒
+        var strdate = year + "-" + month + "-" + day + " " + hour + ":" + minute+":"+second;
         return strdate;
 
     }
@@ -921,10 +922,10 @@
             var imgNode1 = document.createElement("img");
             imgNode1.className = "img122";
             divNode3.appendChild(imgNode1);
-            imgNode1.style.width = "20px";
-            imgNode1.style.height = "20px";
+            imgNode1.style.width = "15px";
+            imgNode1.style.height = "15px";
             imgNode1.style.paddingLeft = "5px";
-            imgNode1.src = "images/dianzan.png";
+            imgNode1.src = "images/dianzan.jpg";
 
             var pNode5 = document.createElement("span");
             pNode5.className = "p22";
