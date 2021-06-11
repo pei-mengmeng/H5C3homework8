@@ -272,8 +272,8 @@
         }
 
         .circle1 {
-            width: 20px;
-            height: 20px;
+            width: 14px;
+            height: 14px;
             border-radius: 50%;
             border: rgb(217, 220, 228) 1px solid;
             position: absolute;
@@ -284,15 +284,15 @@
         }
 
         .circle2 {
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
             border: rgb(214, 218, 226) 1px solid;
             position: absolute;
             display: inline-block;
             z-index: 1000;
-            margin-top: 150px;
-            margin-left: 150px;
+            margin-top: 152px;
+            margin-left: 152px;
         }
 
         ._pic {
@@ -939,6 +939,7 @@
     //页面加载时调getNotes()
     window.onload = function () {
         getNotes();
+        mymusic.pause();
     }
 
     text.onclick = function () {
