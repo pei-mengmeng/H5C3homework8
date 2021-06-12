@@ -911,10 +911,18 @@
             pNode1.style.paddingTop = "5px";
             pNode1.innerHTML = noteList[i - 1]["time"];
 
+            var pNode6 = document.createElement("span");
+            pNode6.className = "p11";
+            pNode6.innerHTML = "删除";
+            pNode6.style.paddingLeft = "330px";
+            pNode6.style.color = "rgb(139, 135, 135)";
+            pNode6.style.fontSize = "13px";
+            divNode3.appendChild(pNode6);
+
             var pNode4 = document.createElement("span");
             pNode4.className = "p11";
             pNode4.innerHTML = "163";
-            pNode4.style.paddingLeft = "370px";
+            pNode4.style.paddingLeft = "9px";
             pNode4.style.color = "rgb(139, 135, 135)";
             pNode4.style.fontSize = "13px";
             divNode3.appendChild(pNode4);
@@ -924,7 +932,7 @@
             divNode3.appendChild(imgNode1);
             imgNode1.style.width = "15px";
             imgNode1.style.height = "15px";
-            imgNode1.style.paddingLeft = "5px";
+            imgNode1.style.paddingLeft = "9px";
             imgNode1.src = "images/dianzan.jpg";
 
             var pNode5 = document.createElement("span");
